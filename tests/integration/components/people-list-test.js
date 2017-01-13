@@ -18,7 +18,7 @@ test('it renders title if passed', function(assert) {
 });
 
 test('it renders people list correctly', function(assert) {
-  this.set('model', ['Marie Curie']);
+  this.set('model', [{name:'Marie Curie'}]);
   this.render(hbs`
     {{people-list title="List of Scientists" people=model}}
   `);

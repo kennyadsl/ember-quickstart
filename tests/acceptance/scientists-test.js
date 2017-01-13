@@ -3,7 +3,7 @@ import moduleForAcceptance from 'ember-quickstart/tests/helpers/module-for-accep
 
 moduleForAcceptance('Acceptance | scientists');
 
-test('visiting /scientists', function(assert) {
+test('Visiting /scientists', function(assert) {
   visit('/scientists');
 
   andThen(() => {
@@ -12,7 +12,7 @@ test('visiting /scientists', function(assert) {
 });
 
 test("I can view the scientists list", function(assert) {
-  let scientists = server.createList('scientists', 3);
+  let scientists = test.server.createList('scientists', 3);
 
   visit('/scientists');
 
