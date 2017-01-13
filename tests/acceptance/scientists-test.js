@@ -12,7 +12,7 @@ test('Visiting /scientists', function(assert) {
 });
 
 test("I can view the scientists list", function(assert) {
-  let scientists = test.server.createList('scientists', 3);
+  let scientists = server.createList('scientist', 3);
 
   visit('/scientists');
 
